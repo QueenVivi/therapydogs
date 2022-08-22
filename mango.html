@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div>
+      <h1>Therapy dogs</h1>
+      <h2>Get happier together</h2>
+      <img
+        src="https://cdn.shopify.com/s/files/1/0253/5938/4655/files/category-hero_0001_cavoodle-2.jpg?v=1639543172"
+        width="900px"
+      />
+      <p>
+        A Therapy Dog provides comfort, companionship and emotional support to
+        individuals, families, and people visiting or living in facilities.
+        Therapy Dogs can particularly support people who experience:
+        behavioural, emotional, developmental and mental health conditions.
+        physical disabilities.
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Therapy_dog" target="_blank"
+          >Learn more about threapy dogs
+        </a>
+      </p>
+      <button>Meet a therapy dog</button>
+      <p>Code by Vivian Xu</p>
+    </div>
+    <style>
+      div {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: #f6f2fe;
+      }
+
+      h1 {
+        text-align: center;
+        color: #885df1;
+      }
+
+      h2,
+      p {
+        text-align: center;
+        line-height: 150%;
+      }
+
+      button {
+        display: block;
+        margin: 30px auto 30px auto;
+        padding: 25px, 40px;
+        font-size: 25px;
+        color: #885df1;
+        background-color: transparent;
+        border: 3px solid #885df1;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: #885df1;
+        color: white;
+        cursor: pointer;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    </style>
+    <script>
+      function meetAdog() {
+        let name = prompt("what's your name?");
+        prompt("what's your email address?");
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = "We'll be in touch soon " + name + " 🐕";
+      }
+
+      let bookAdog = document.querySelector("button");
+      bookAdog.addEventListener("click", meetAdog);
+    </script>
+  </body>
+</html>
